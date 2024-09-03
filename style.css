@@ -27,6 +27,7 @@ table img {
     width: 500px;
     height: 500px;
     object-fit: fill;
+    z-index: 1;
 }
 
 
@@ -93,7 +94,7 @@ th:nth-child(10) {
     top: 0;
     left: 50%;
     transform: translateX(-50%) rotate(90deg); /* Rotate to point downward */
-    width: 150px; /* Adjust size as needed */
+    width: 400px; /* Adjust size as needed */
     height: auto; /* Maintain aspect ratio */
     animation: reach-in-out 12s ease forwards;
     z-index: 2;
@@ -101,27 +102,27 @@ th:nth-child(10) {
 
 @keyframes reach-in-out {
     0% {
-        top: 0;
+        top: -200px;
         opacity: 1;
     }
     25% {
-        top: 250px; /* Move the hand into the bag */
+        top: 100px; /* Move the hand into the bag */
         opacity: 1;
     }
     35% {
-        top: 250px; /* Hand disappears */
+        top: 100px; /* Hand disappears */
         opacity: 0;
     }
     50% {
-        top: 250px; /* Hand remains hidden for 12 seconds */
+        top: 100px; /* Hand remains hidden for 12 seconds */
         opacity: 0;
     }
     75% {
-        top: 250px; /* Hand reappears with item */
+        top: -400px; /* Hand reappears with item */
         opacity: 1;
     }
     100% {
-        top: 0; /* Hand returns to start */
+        top: -400px; /* Hand returns to start */
         opacity: 0; /* Hand disappears */
     }
 }
