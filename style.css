@@ -1,0 +1,128 @@
+body {
+    background-color: #f0f0f0;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    color: blue;
+    font-size: 24px;
+}
+#logo {
+    width: 150px;  
+    height: 150px;
+    object-fit: cover; 
+}
+head img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+table img {
+    width: 200px;
+    height: 200px;
+    object-fit: fill;
+}
+
+#case {
+    width: 500px;
+    height: 500px;
+    object-fit: fill;
+}
+
+
+.center {
+    display: block;
+    margin-top: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+
+
+p {
+    color: gray;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+th:nth-child(1),
+th:nth-child(2),
+th:nth-child(3) {
+    background-color: #506cfc;
+    color: #000000;
+}
+
+th:nth-child(4),
+th:nth-child(5),
+th:nth-child(6) {
+    background-color: #9044fc;
+    color: #000000;
+}
+
+th:nth-child(7),
+th:nth-child(8) {
+    background-color: #d82ce4;
+    color: #000000;
+}
+
+th:nth-child(9) {
+    background-color: #f04c4c;
+    color: #000000;
+}
+
+th:nth-child(10) {
+    background-color: #ffd404;
+    color: #000000;
+}
+
+
+
+#animation-container {
+    position: relative;
+    width: 500px; /* Adjust as needed */
+    height: 500px; /* Adjust as needed */
+}
+
+
+#hand {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg); /* Rotate to point downward */
+    width: 150px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    animation: reach-in-out 12s ease forwards;
+    z-index: 2;
+}
+
+@keyframes reach-in-out {
+    0% {
+        top: 0;
+        opacity: 1;
+    }
+    25% {
+        top: 250px; /* Move the hand into the bag */
+        opacity: 1;
+    }
+    35% {
+        top: 250px; /* Hand disappears */
+        opacity: 0;
+    }
+    50% {
+        top: 250px; /* Hand remains hidden for 12 seconds */
+        opacity: 0;
+    }
+    75% {
+        top: 250px; /* Hand reappears with item */
+        opacity: 1;
+    }
+    100% {
+        top: 0; /* Hand returns to start */
+        opacity: 0; /* Hand disappears */
+    }
+}
+
