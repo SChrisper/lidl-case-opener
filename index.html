@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fi">
+<script src="script.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Page</title>
+    <link rel="stylesheet" href="style.css">
+    <img src="images/logo.jpg" alt="Lidl-logo" id="logo">
+    <title>Lidl case opener</title>
+</head>
+<body>
+
+    <h1>Terve tuloa lidlin (ei official) case opening simulaattoriin</h1>
+    <p1>Kouluprojekti lidl älä haasta oikeuteen pls.</p1>
+    <h2>Tutorial!!!!!!</h2>
+    <p2>Lidl kassin alapuolella on näppäin josta sinun pitää painaa, jotta avaaminen alkoi</p2>
+    <h3>Item list.</h3>
+    <table border="1">
+        <tr>
+            <th>Mil-spec</th>
+            <th>Mil-spec</th>
+            <th>Mil-spec</th>
+            <th>Restricted</th>
+            <th>Restricted</th>
+            <th>Restricted</th>
+            <th>Classified</th>
+            <th>Classified</th>
+            <th>Covert</th>
+            <th>Extraordinary</th>
+        </tr>
+        <tr>
+            <td><img src="images/muovikassi.jpg" alt="Muovikassi"></td>
+            <td><img src="images/halpa_sukaalevy.jpg" alt="Halpa sukaalevy"></td>
+            <td><img src="images/vehnasampyla.jpg" alt="Vehnäsämpylä"></td>
+            <td><img src="images/valkosipulipatonki.jpg" alt="Valkosipulipatonki"></td>
+            <td><img src="images/juusto_pekonisampyla.jpg" alt="Juusto-pekonisämpylä"></td>
+            <td><img src="images/kinkku_juustocroissant.jpg" alt="Kinkku-juustocroissant"></td>
+            <td><img src="images/siti_jaffa.jpg" alt="Siti Jaffa"></td>
+            <td><img src="images/siti_cola.jpg" alt="Siti Cola"></td>
+            <td><img src="images/kong_strong.jpg" alt="Kong Strong"></td>
+            <td><img src="images/rare_special_item.jpg" alt="Rare Special Item"></td>
+        </tr>
+        <tr>
+            <td>Muovikassi</td>
+            <td>Halpa sukaalevy</td>
+            <td>Vehnäsämpylä</td>
+            <td>Valkosipulipatonki</td>
+            <td>Juusto-pekonisämpylä</td>
+            <td>Kinkku-juustocroissant</td>
+            <td>Siti Jaffa</td>
+            <td>Siti Cola</td>
+            <td>Kong Strong</td>
+            <td>Rare special item</td>
+        </tr>
+    </table>
+    <body>
+        <div id="animation-container">
+            <img src="images/case.jpg" alt="Case" id="case" class="center">
+            <img src="images/grab.jpg" alt="grabbing" id="hand" class="hand-animation">
+            <div id="object-display"></div>
+        </div>
+        <button id="start-button" onclick="randomizer()">Unbox item.</button>
+        <audio id="sound-unbox" src="sounds/unboxing.mp3"></audio>
+    </body>
+
+    
+</body>
+</html>
