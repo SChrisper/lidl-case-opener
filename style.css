@@ -39,7 +39,10 @@ table img {
     width: 50%;
   }
 
-
+#start-button {
+    height: 60px;
+    width: 100px;
+}
 
 p {
     color: gray;
