@@ -85,6 +85,7 @@ th:nth-child(10) {
 
 
 
+
 #animation-container {
     position: relative;
     width: 500px; /* Adjust as needed */
@@ -100,38 +101,53 @@ th:nth-child(10) {
     transform: translateX(-50%) rotate(90deg); /* Rotate to point downward */
     width: 400px; /* Adjust size as needed */
     height: auto; /* Maintain aspect ratio */
-    animation: reach-in-out 15s ease forwards;
     z-index: 2;
+
+}
+.animation {
+    animation: reach-in-out 15s ease forwards;
+    animation-iteration-count: 1;
 }
 
-start-button:active {
-    animation-play-state: running;
-}
 
 @keyframes reach-in-out {
     0% {
         top: -200px;
         opacity: 1;
+        rotate: 0deg;
     }
     25% {
         top: 100px; /* Move the hand into the bag */
         opacity: 1;
+        rotate: 0deg;
     }
     35% {
         top: 100px; /* Hand disappears */
         opacity: 0;
+        rotate: 0deg;
     }
     50% {
         top: 100px; /* Hand remains hidden for 12 seconds */
         opacity: 0;
+        rotate: 0deg;
+        max-width: 400px;
+        max-height: auto;
+        
     }
     75% {
-        top: -400px; /* Hand reappears with item */
+        top: -300px; /* Hand reappears with item */
         opacity: 1;
+        rotate: 270deg;
+        max-width: 200px;
+        max-height: 200px;
+
     }
     100% {
-        top: -400px; /* Hand returns to start */
+        top: -300px; /* Hand returns to start */
         opacity: 1; /* Hand disappears */
+        rotate: 270deg;
+        max-width: 300px;
+        max-height: 300px;
     }
 }
 
