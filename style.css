@@ -1,11 +1,18 @@
 body {
-    background-color: #f0f0f0;
+    background-color: #dedede;
     font-family: 'Trebuchet MS', sans-serif;
+}
+header {
+    background-color: #fafafa;
+    border: 2px solid #929292;
 }
 
 h1 {
     color: blue;
     font-size: 24px;
+}
+p1 {
+    color: #747474;
 }
 #logo {
     width: 150px;  
@@ -41,15 +48,66 @@ table img {
 
 #start-button {
     height: 60px;
-    width: 100px;
+    width: 150px;
+    background-color: #14bc6c;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+
+}
+#start-button:hover {
+    background-color: #0f8049;
+
+}
+#start-button.spinner {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 6px solid rgba(0,0,0,0.25);
 }
 
 p {
     color: gray;
+    
+}
+h6 {
+    font-size: xx-large;
+    font-weight: bold;
 }
 table {
     border-collapse: collapse;
     width: 100%;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    font-weight: bold;
+}
+li {
+    max-width: 100px;
+    font-weight: bold;
+    border: 1px solid #000000;
+}
+li:nth-child(1) {
+    background-color: #506cfc;
+    color: #000000;
+}
+li:nth-child(2) {
+    background-color: #9044fc;
+    color: #000000;
+}
+li:nth-child(3) {
+    background-color: #d82ce4;
+    color: #000000;
+}
+li:nth-child(4) {
+    background-color: #f04c4c;
+    color: #000000;
+}
+li:nth-child(5) {
+    background-color: #ffd404;
+    color: #000000;
 }
 
 
@@ -88,8 +146,8 @@ th:nth-child(10) {
 
 #animation-container {
     position: relative;
-    width: 500px; /* Adjust as needed */
-    height: 500px; /* Adjust as needed */
+    width: 500px;
+    height: 500px;
 }
 
 
@@ -98,9 +156,9 @@ th:nth-child(10) {
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translateX(-50%) rotate(90deg); /* Rotate to point downward */
-    width: 400px; /* Adjust size as needed */
-    height: auto; /* Maintain aspect ratio */
+    transform: translateX(-50%) rotate(90deg); /* Rotate */
+    width: 400px; /*size*/
+    height: auto; /*aspect ratio */
     z-index: 2;
 
 }
@@ -117,8 +175,8 @@ th:nth-child(10) {
         rotate: 0deg;
     }
     25% {
-        top: 100px; /* Move the hand into the bag */
-        opacity: 1;
+        top: 100px; /* Move hand in bag */
+        opacity: 0;
         rotate: 0deg;
     }
     35% {
@@ -127,27 +185,29 @@ th:nth-child(10) {
         rotate: 0deg;
     }
     50% {
-        top: 100px; /* Hand remains hidden for 12 seconds */
+        top: 100px; /* Hand hidden 12sec */
         opacity: 0;
         rotate: 0deg;
         max-width: 400px;
         max-height: auto;
+        left: 250px;
         
     }
     75% {
-        top: -300px; /* Hand reappears with item */
+        top: -300px; /* Hand appear with item */
         opacity: 1;
         rotate: 270deg;
-        max-width: 200px;
-        max-height: 200px;
+        left: 1100px;
+        max-width: 600px;
+        max-height: 600px;
 
     }
     100% {
-        top: -300px; /* Hand returns to start */
-        opacity: 1; /* Hand disappears */
+        top: -300px;
+        opacity: 1;
         rotate: 270deg;
-        max-width: 300px;
-        max-height: 300px;
+        left: 1100px;
+        max-width: 600px; /* big hand*/
+        max-height: 600px;
     }
 }
-

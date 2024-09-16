@@ -7,16 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Styled Page</title>
     <link rel="stylesheet" href="style.css">
-    <img src="images/logo.jpg" alt="Lidl-logo" id="logo">
-    <title>Lidl case opener</title>
+    
+    
+    <header>
+        <img src="images/logo.jpg" alt="Lidl-logo" id="logo">
+        <h1>Lidl Kassi Opener</h1>
+        <h2>Tervetuloa Lidlin epäviralliseen uhkapelisimulaattoriin!</h2>
+    </header>
 </head>
 <body>
 
-    <h1>Terve tuloa lidlin (ei official) case opening simulaattoriin</h1>
+    
     <p1>Kouluprojekti lidl älä haasta oikeuteen pls.</p1>
-    <h2>Tutorial!!!!!!</h2>
-    <p2>Lidl kassin alapuolella on näppäin josta sinun pitää painaa, jotta avaaminen alkoi</p2>
-    <h3>Item list.</h3>
+    <h3>Tutorial!!!!!!</h3>
+    <p2>Lidl-kassin pohjasta löytyy painike, jota täytyy painaa käynnistääksesi avaamisprosessin. Voit avata yhteensä 10 erilaista esinettä, joista jokaisella on oma ainutlaatuinen harvinaisuustasonsa.</p2>
+    <table border="1">
+        <ul>
+            <li>Mil-Spec Grade = 79.92%</li>
+            <li>Restricted = 15.98%</li>
+            <li>Classified = 3.2%</li>
+            <li>Covert = 0.64%</li>
+            <li>Exceedingly Rare = 0.26%</li>
+        </ul>
+    </table>
+    <h4>Item list.</h4>
     <table border="1">
         <tr>
             <th>Mil-spec</th>
@@ -28,7 +42,7 @@
             <th>Classified</th>
             <th>Classified</th>
             <th>Covert</th>
-            <th>Extraordinary</th>
+            <th>Exceedingly rare</th>
         </tr>
         <tr>
             <td><img src="images/muovikassi.jpg" alt="Muovikassi"></td>
@@ -61,7 +75,7 @@
             <img src="images/grab.jpg" alt="grabbing" id="hand" class="hand-animation">
             <div id="object-display"></div>
         </div>
-        <button class="button"id="start-button" onclick="otherfunc()">Unbox item.</button>
+        <button class="button"id="start-button" onclick="otherfunc()">Unlock Kassi</button>
         <audio id="sound-unbox" src="sounds/unboxing.mp3"></audio>
     </body>
 
