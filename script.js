@@ -29,11 +29,12 @@ function audio() {
 }
 function ButtonCooldown() {
     const button = document.getElementById('start-button');
-    
-    button.disabled = true;
-    button.textContent = "13s";
 
-    let seconds = 13;
+    button.disabled = true;
+    button.classList.add('cooldown');
+    button.textContent = "14s";
+
+    let seconds = 14;
     const interval = setInterval(() => {
         seconds--;
         button.textContent = `${seconds}s`;
@@ -41,7 +42,9 @@ function ButtonCooldown() {
         if (seconds === 0) {
             clearInterval(interval);
             button.disabled = false;
-            button.textContent = "Unlock Kassi";
+            button.classList.remove('cooldown');
+            button.textContent = ('Unlock Kassi')
+
         }
     }, 1000);
 }

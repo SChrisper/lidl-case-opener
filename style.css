@@ -68,6 +68,10 @@ table img {
     border-radius: 50%;
     border: 6px solid rgba(0,0,0,0.25);
 }
+.cooldown {
+    background-color: #0f8049 !important;
+    cursor: not-allowed;
+}
 
 p {
     color: gray;
