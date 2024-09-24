@@ -1,8 +1,10 @@
-
+//funktio jonka avulla ohjelman voi laittaa tauolle (Aatos)
 function sleep(time) {
     return new Promise((resolve) => setTimeout(resolve, time));
 }
 
+
+// funktio joka suorittaa monta funktiota (Aatos)
 function otherfunc() {
     reset_animation()
     anim()
@@ -11,22 +13,31 @@ function otherfunc() {
     ButtonCooldown()
 }
 
+
+// hakee animaation (Aatos)
 async function anim() {
     document.getElementById("hand").className= "animation";
 }
 
+
+// aloittaa animaation alusta (Aatos)
 function reset_animation() {
     var el = document.getElementById('hand');
     document.getElementById("hand").src="images/grab.jpg";
     el.style.animation = 'none';
     el.offsetHeight; /* trigger reflow */
     el.style.animation = null; 
-  }
+}
 
+
+// pelaa äänen kun animaatio pelataan (Aatos)
 function audio() {
     var audio = document.getElementById('sound-unbox');
     audio.play();
 }
+
+
+// laittaa napille ajan jolloin sitä ei voi painaa (Christopher)
 function ButtonCooldown() {
     const button = document.getElementById('start-button');
 
@@ -50,6 +61,7 @@ function ButtonCooldown() {
 }
 
 
+// arpoo mikä esine saadaan (Aatos)
 async function randomizer () {
     const rand = () => Math.floor(Math.random() * 10000);
 
